@@ -21,7 +21,7 @@ export default function ShareLinkButton() {
     const classes = useStyles();
     const {room} = useVideoContext();
     const urlArray = window.location.pathname.split('/');
-    var url = window.location.origin + '/' + urlArray[1] + '/' + urlArray[2] + '/';
+    var url = window.location.origin ;
 //Copy to clipboard is used to copy the url
     return (  
     <CopyToClipboard text={url}>
